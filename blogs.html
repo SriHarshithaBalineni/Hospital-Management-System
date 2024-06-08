@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Blogs</title>
+
+  <style>
+    /* Styles for the top section */
+    .top-section {
+      background-image: url("/Images/blog1.jpeg"); /* Replace 'background-image.jpg' with your image file */
+      background-size: cover;
+      background-position: center;
+      height: 400px; /* Adjust height as needed */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    /* Styles for the middle section */
+    .blogs-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .blog-item {
+      text-align: center;
+    }
+
+    .blog-image {
+      width: 100%;
+      height: 200px; /* Adjust height as needed */
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    /* Styles for the last section */
+    .contact-banner {
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .contact-form textarea {
+      height: 150px;
+    }
+
+    .contact-form button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <!-- Top section -->
+  <div class="top-section">
+    <h2>Read more about what we do from our expert doctors and trusting patients</h2>
+  </div>
+
+  <!-- Middle section -->
+  <div class="blogs-grid">
+    <!-- Blog 1 -->
+    <div class="blog-item">
+      <img src="/images/blog2.jpeg" alt="Blog 1" class="blog-image"> <!-- Replace 'blog1.jpg' with your image file -->
+      <h3>Blog Title 1</h3>
+      <p>Description of Blog 1</p>
+    </div>
+
+    <!-- Blog 2 -->
+    <div class="blog-item">
+      <img src="/images/blog3.jpeg" alt="Blog 2" class="blog-image"> <!-- Replace 'blog2.jpg' with your image file -->
+      <h3>Blog Title 2</h3>
+      <p>Description of Blog 2</p>
+    </div>
+
+    <!-- Blog 3 -->
+    <div class="blog-item">
+      <img src="/images/blog4.jpeg" alt="Blog 3" class="blog-image"> <!-- Replace 'blog3.jpg' with your image file -->
+      <h3>Blog Title 3</h3>
+      <p>Description of Blog 3</p>
+    </div>
+
+    <!-- Repeat the above structure for more blogs -->
+    <div class="blog-item">
+      <img src="/images/blog2.jpeg" alt="Blog 1" class="blog-image"> <!-- Replace 'blog1.jpg' with your image file -->
+      <h3>Blog Title 1</h3>
+      <p>Description of Blog 1</p>
+    </div>
+
+    <!-- Blog 2 -->
+    <div class="blog-item">
+      <img src="/images/blog3.jpeg" alt="Blog 2" class="blog-image"> <!-- Replace 'blog2.jpg' with your image file -->
+      <h3>Blog Title 2</h3>
+      <p>Description of Blog 2</p>
+    </div>
+
+    <!-- Blog 3 -->
+    <div class="blog-item">
+      <img src="/images/blog4.jpeg" alt="Blog 3" class="blog-image"> <!-- Replace 'blog3.jpg' with your image file -->
+      <h3>Blog Title 3</h3>
+      <p>Description of Blog 3</p>
+    </div>
+
+    <div class="blog-item">
+      <img src="/images/blog2.jpeg" alt="Blog 1" class="blog-image"> <!-- Replace 'blog1.jpg' with your image file -->
+      <h3>Blog Title 1</h3>
+      <p>Description of Blog 1</p>
+    </div>
+
+    <!-- Blog 2 -->
+    <div class="blog-item">
+      <img src="/images/blog3.jpeg" alt="Blog 2" class="blog-image"> <!-- Replace 'blog2.jpg' with your image file -->
+      <h3>Blog Title 2</h3>
+      <p>Description of Blog 2</p>
+    </div>
+
+    <!-- Blog 3 -->
+    <div class="blog-item">
+      <img src="/images/blog4.jpeg" alt="Blog 3" class="blog-image"> <!-- Replace 'blog3.jpg' with your image file -->
+      <h3>Blog Title 3</h3>
+      <p>Description of Blog 3</p>
+    </div>
+  </div>
+
+  <!-- Last section -->
+  <div class="contact-banner">
+    <h2>Tell us more about how we perform</h2>
+    <div class="contact-form">
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required><br>
+        <input type="email" name="email" placeholder="Your Email" required><br>
+        <textarea name="message" placeholder="Your Message" required></textarea><br>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

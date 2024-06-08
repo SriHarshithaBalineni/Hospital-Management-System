@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="/styles8.css">
+    <script src="/script-signup.js"></script>
+</head>
+<body>
+
+<h2>Book Appointment</h2>
+
+<form id="appointmentForm" onsubmit="submitAppointment()">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" required><br>
+
+    <label for="gender">Gender:</label><br>
+    <select id="gender" name="gender" required>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+    </select><br>
+
+    <label for="department">Department:</label><br>
+    <select id="department" name="department" required>
+        <option value="Cardiology">Cardiology</option>
+        <option value="Neurology">Neurology</option>
+        <option value="Orthopedics">Orthopedics</option>
+        <!-- Add more options as needed -->
+    </select><br>
+    <label for="chief_complaint">Chief Complaint:</label><br> <!-- New field for chief complaint -->
+    <textarea id="chief_complaint" name="chiefComplaint" required></textarea><br> <!-- Text area for chief complaint -->
+
+
+    <button type="submit">Book Appointment</button>
+</form>
+
+<!-- Display message -->
+<div id="message"></div>
+</body>
+</html>

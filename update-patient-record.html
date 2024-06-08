@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Patient Record</title>
+    <!-- <link rel="stylesheet" href="/styles.css"> -->
+   
+    <script src="/script-signup.js"></script>
+</head>
+<body>
+    <h2>Update Patient Record</h2>
+    
+    <div>
+        <label for="patients">Select Patient:</label>
+        <select id="patients" onchange="fetchPatientInfo()">
+            <!-- Options will be dynamically populated using JavaScript -->
+        </select>
+    </div>
+
+    <div id="patientInfo" style="display: none;">
+        <h3>Patient Information</h3>
+        <p><strong>Name:</strong> <span id="patientName"></span></p>
+        <p><strong>Email:</strong> <span id="patientEmail"></span></p>
+        <p><strong>Age:</strong> <span id="patientAge"></span></p>
+        <p><strong>Gender:</strong> <span id="patientGender"></span></p>
+        <p><strong>Department:</strong> <span id="patientDepartment"></span></p>
+        <p><strong>Chief Complaint:</strong> <span id="patientChiefComplaint"></span></p>
+
+        <div>
+            <label for="medicine">Suggest Medicines:</label><br>
+            <textarea id="medicine" rows="4" cols="50"></textarea>
+        </div>
+
+        <div>
+            <label for="suggestions">Suggestions:</label><br>
+            <textarea id="suggestions" rows="4" cols="50"></textarea>
+        </div>
+
+        <button onclick="submitPatientRecord()">Submit</button>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

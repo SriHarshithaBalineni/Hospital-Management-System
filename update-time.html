@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Time and Department</title>
+    <!-- Include styles.css -->
+    <link rel="stylesheet" href="/styles7.css">
+    <!-- Include flatpickr CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Update Your Time and Department</h2>
+        <form action="/update-info" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" ><br><br> <!-- Display current name -->
+            <label for="startTime">Start Time:</label><br>
+            <input type="text" id="startTime" name="startTime" placeholder="Select start time" readonly><br><br> <!-- Time picker input field for start time -->
+            <label for="endTime">End Time:</label><br>
+            <input type="text" id="endTime" name="endTime" placeholder="Select end time" readonly><br><br> <!-- Time picker input field for end time -->
+            <label for="department">Department:</label><br>
+            <select id="department" name="department">
+                <option value="Cardiology">Cardiology</option>
+                <option value="Neurology">Neurology</option>
+                <option value="Orthopedics">Orthopedics</option>
+                <!-- Add more options as needed -->
+            </select><br><br>
+            <input type="submit" value="Update Info">
+        </form>
+    </div>
+    <!-- Include flatpickr JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        // Initialize flatpickr for start time
+        flatpickr("#startTime", {
+            enableTime: true,
+            noCalendar: true,
+            dateFormat: "H:i",
+            defaultDate: "09:00", // Optional: Set default start time
+            minuteIncrement: 15 // Optional: Adjust to your preference
+        });
+
+        // Initialize flatpickr for end time
+        flatpickr("#endTime", {
+            enableTime: true,
+            noCalendar: true,
+            dateFormat: "H:i",
+            defaultDate: "17:00", // Optional: Set default end time
+            minuteIncrement: 15 // Optional: Adjust to your preference
+        });
+    </script>
+</body>
+</html>
