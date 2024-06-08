@@ -1,0 +1,116 @@
+nav{
+    font-family: "Century Gothic","Lato",sans-serif;
+    background-color: aqua;
+    background-image: linear-gradient(to right,aqua,grey);
+}
+a{
+    text-decoration: none;
+}
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom:0;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+.navbar-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /*how an element will grow or shrink in a flex*/
+    color: #000;
+    letter-spacing: 0.1rem;
+	transition: all 0.5s ease;
+	font-size: 0.8rem;
+	&:hover {
+        color:white;
+        background: rgba(102,177,241,0.8);
+        transition: all 0.5s ease;
+    }
+}
+
+/* img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+    display:block;
+    z-index: 0;
+} */
+.div1{
+    position:relative;
+    text-align:center;
+    background-color:rgb(162, 194, 194) ;
+
+}
+.div1 img {
+    display: block;
+    width: 100%; /* Ensures the image fills the container */
+    height: auto; /* Maintains aspect ratio */
+}
+.text{
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    font-size: 500%;
+    background-color: none;
+    color:rgb(25, 200, 200);
+}
+@media screen and (max-width: 768px) {
+    .text {
+        position: static; /* Change position to static for smaller screens */
+        top: auto; /* Reset top position */
+        right: auto; /* Reset right position */
+        margin: 0; /* Reset margin */
+        padding: 5px; /* Reduce padding for smaller screens */
+    }
+}
+.div1, .div2 {
+    margin: 0;
+    padding: 0;
+}
+.div2{
+    /* background-image: linear-gradient(rgb(162, 194, 194),rgb(255, 209, 233)); */
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+    flex:1;
+    justify-content: space-around;
+}
+.div2 > div{
+    flex:1;
+   margin:10px;
+   padding:20px;
+}
+.textdiv{
+    display: flex;
+    justify-content: center; /* Aligns content horizontally at the center */
+    align-items: center;
+    font-size:24px;
+}
+.div3{
+    display:flex;
+    background-color:rgb(162, 194, 194);
+    justify-content: space-around;
+    color:white;
+    text-align: center;
+}
+.div3 a{
+    color:white;
+}
+.div3 a:hover{
+    color:rgb(241, 143, 143);
+}
+.div3>div{
+    align-content: center;
+}
+.iconbar{
+    font-size:1.25em;
+    background-color: none;
+    color:black;
+
+}
+li{
+    color:white;
+}
