@@ -1,0 +1,43 @@
+body,html{
+    margin:0;
+    padding:0;
+    height:100%;
+}
+.main{
+    display:flex;
+    height:100vh;
+}
+.left{
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    flex:1;
+    background-color: black;
+}
+.right{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex:1;
+    background-color: white;
+}
+.login-form {
+    width: 30%; /* Percentage width */
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #382323;
+    border-radius: 5px;
+    background-color: #ffcece;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.custom-heading{
+    font-size: 3em;
+    color:rgb(167, 89, 102);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 50px;
+}
